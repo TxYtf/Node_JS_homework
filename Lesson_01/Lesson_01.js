@@ -16,6 +16,7 @@ if (brackets !== 0) console.log("Wrong array format");
 else {
     console.log("- Введений масив: ", inputString.split('"').join(""));
 }
+
 let elementsArr = inputString.split(',');
 let elArr2 = [];
 for (let i= 0; i < elementsArr.length; i++) {
@@ -24,6 +25,7 @@ for (let i= 0; i < elementsArr.length; i++) {
         .map((el) => ((el === '') ? el = '[' : el));
     elArr2.push(...el1);
 }
+
 let elArr4 = [];
 for (let i = 0; i < elArr2.length; i++) {
     let el3 = elArr2[i]
