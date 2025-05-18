@@ -16,7 +16,6 @@ if (brackets !== 0) console.log("Wrong array format");
 else {
     console.log("- Введений масив: ", inputString.split('"').join(""));
 }
-
 let elementsArr = inputString.split(',');
 let elArr2 = [];
 for (let i= 0; i < elementsArr.length; i++) {
