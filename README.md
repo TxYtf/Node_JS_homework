@@ -48,7 +48,7 @@ node sum.js "[1, 2, [3, 4, [5]], 6]"
 
  Структура репо:  
  ├─ routes/          (обов’язково)  
- │   └─ users/  
+ │      └─ users/  
  │       ├─ route.js      (GET /users, POST /users)  
  │       └─ [id]/  
  │           └─ route.js  (GET, PUT, DELETE /users/:id)  
