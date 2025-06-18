@@ -1,0 +1,1 @@
+require('dotenv').config(); // тепер має бути доступний process.env.PORT
