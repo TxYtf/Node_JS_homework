@@ -46,18 +46,18 @@ node sum.js "[1, 2, [3, 4, [5]], 6]"
   8. Error → HTTP. Очікувані помилки перетворюйте на: 400 (валідацію), 404 (ресурс не знайдено), 405, 500.
   9. Тести (необовʼязково). Один-два node:test або uvu тести на GET /users та POST /users.
 
- Структура репо:
- ├─ routes/          (обов’язково) 
- │   └─ users/ 
- │       ├─ route.js      (GET /users, POST /users) 
- │       └─ [id]/ 
- │           └─ route.js  (GET, PUT, DELETE /users/:id) 
- ├─ services/ 
- │   └─ users.service.js 
- ├─ lib/ 
- │   └─ router.js        (сканер + диспетчер) 
- ├─ database.json 
- └─ index.js            (entry, http.createServer) 
+ Структура репо:  
+ ├─ routes/          (обов’язково)  
+ │   └─ users/  
+ │       ├─ route.js      (GET /users, POST /users)  
+ │       └─ [id]/  
+ │           └─ route.js  (GET, PUT, DELETE /users/:id)  
+ ├─ services/  
+ │   └─ users.service.js  
+ ├─ lib/  
+ │   └─ router.js        (сканер + диспетчер)  
+ ├─ database.json  
+ └─ index.js            (entry, http.createServer)  
 
 <hr>
 
