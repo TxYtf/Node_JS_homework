@@ -47,9 +47,9 @@ node sum.js "[1, 2, [3, 4, [5]], 6]"
   9. Тести (необовʼязково). Один-два node:test або uvu тести на GET /users та POST /users.
 
  Структура репо:  
- ├─ routes/          (обов’язково)  
- │      └─ users/  
- │       ├─ route.js      (GET /users, POST /users)  
+ <p>├─ routes/          (обов’язково)</p>
+ <p>│   └─ users/</p>
+ <p>│       ├─ route.js      (GET /users, POST /users)</p> 
  │       └─ [id]/  
  │           └─ route.js  (GET, PUT, DELETE /users/:id)  
  ├─ services/  
