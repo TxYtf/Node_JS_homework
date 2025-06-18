@@ -37,7 +37,7 @@ node sum.js "[1, 2, [3, 4, [5]], 6]"
   * код проходить ESLint без помилок.
 <hr>
 
-<div color="green">
+<div style="color: blue; background-color: green;">
 <h1><strong>Формат здачі домашніх завдань через GitHub:</strong></h1>
 
 * Створіть публічний репозиторій на GitHub з будь-якою зручною назвою (наприклад, назва_курсу-дз);
