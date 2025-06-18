@@ -47,17 +47,18 @@ node sum.js "[1, 2, [3, 4, [5]], 6]"
   9. Тести (необовʼязково). Один-два node:test або uvu тести на GET /users та POST /users.
 
  Структура репо:
- ├─ routes/          (обов’язково)
- │   └─ users/
- │       ├─ route.js      (GET /users, POST /users)
- │       └─ [id]/
- │           └─ route.js  (GET, PUT, DELETE /users/:id)
- ├─ services/
- │   └─ users.service.js
- ├─ lib/
- │   └─ router.js        (сканер + диспетчер)
- ├─ database.json
- └─ index.js            (entry, http.createServer)
+ ├─ routes/          (обов’язково) 
+ │   └─ users/ 
+ │       ├─ route.js      (GET /users, POST /users) 
+ │       └─ [id]/ 
+ │           └─ route.js  (GET, PUT, DELETE /users/:id) 
+ ├─ services/ 
+ │   └─ users.service.js 
+ ├─ lib/ 
+ │   └─ router.js        (сканер + диспетчер) 
+ ├─ database.json 
+ └─ index.js            (entry, http.createServer) 
+
 <hr>
 
 <h1><strong>Lesson_02new - Основи роботи із сервером</strong></h1>
