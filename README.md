@@ -9,7 +9,7 @@ node sum.js "[1, 2, [3, 4, [5]], 6]"
 
 <h1><strong>Lesson_01new - Node.js: архітектура, завдання та основні концепції</strong></h1>
 
-$\colorbox{green}{{\color{white}{This\ is\ a\ Big\ Title}}}$
+$\color{white}{This\ is\ a\ Big\ Title}$
 
 $\textcolor{green}{Написати\ невеликий\ консольний\ застосунок-трекер\ звичок\ без\ жодних\ сторонніх\ бібліотек,\ лише\ на\ вбудованих\ модулях\ Node.js.\ Реалізувати\ лінтинг\ коду\ за\ допомогою\ ESLint(Oxlint*).}$
 Мета:
