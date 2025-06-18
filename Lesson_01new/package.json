@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "directories": {
-    "lib": "lib"
+    "lib": "lib",
+    "routes": "routes",
+    "users": "routes/users",
+    "[id]": "routes/users/[id]",
+    "services": "services"
   },
   "scripts": {
     "start": "node index.js",
@@ -19,7 +23,17 @@
     "express": "^5.1.0"
   },
   "devDependencies": {
+    "@eslint/css": "^0.9.0",
+    "@eslint/js": "^9.29.0",
+    "@eslint/json": "^0.12.0",
+    "@eslint/markdown": "^6.5.0",
     "eslint": "^9.29.0",
-    "nodemon": "^3.1.10"
+    "globals": "^16.2.0",
+    "nodemon": "^3.1.10",
+    "typescript-eslint": "^8.34.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TxYtf/Node_JS_homework.git"
   }
 }
