@@ -47,9 +47,9 @@ node sum.js "[1, 2, [3, 4, [5]], 6]"
   9. Тести (необовʼязково). Один-два node:test або uvu тести на GET /users та POST /users.
 
  Структура репо:  
- ├─ routes/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(обов’язково)  
+ ├─ routes/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(обов’язково)  
  │&nbsp;&nbsp;&nbsp;└─ users/  
- │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ route.js&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(GET /users, POST /users)  
+ │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ route.js&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(GET /users, POST /users)  
  │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ [id]/  
  │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ route.js&nbsp;&nbsp;(GET, PUT, DELETE /users/:id)  
  ├─ services/  
@@ -57,7 +57,7 @@ node sum.js "[1, 2, [3, 4, [5]], 6]"
  ├─ lib/  
  │&nbsp;&nbsp;&nbsp;└─ router.js&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(сканер + диспетчер)  
  ├─ database.json  
- └─ index.js&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(entry, http.createServer)  
+ └─ index.js&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(entry, http.createServer)  
 
 <hr>
 
