@@ -55,9 +55,9 @@ node sum.js "[1, 2, [3, 4, [5]], 6]"
  ├─ services/  
  │&nbsp;&nbsp;&nbsp;└─ users.service.js  
  ├─ lib/  
- │&nbsp;&nbsp;&nbsp;└─ router.js&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(сканер + диспетчер)  
+ │&nbsp;&nbsp;&nbsp;└─ router.js&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(сканер + диспетчер)  
  ├─ database.json  
- └─ index.js&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(entry, http.createServer)  
+ └─ index.js&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(entry, http.createServer)  
 
 <hr>
 
