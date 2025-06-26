@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1750936830268",
+    "name": "run",
+    "freq": "daily",
+    "date": "22.06.2025_07:30",
+    "done": "true"
+  },
+  {
+    "id": "1750937115868",
+    "name": "drink_water",
+    "freq": "daily",
+    "date": "22.06.2025_08:00",
+    "done": "true"
+  },
+  {
+    "id": "1750937837152",
+    "name": "watch_YouTube",
+    "freq": "daily",
+    "date": "23.06.2025_19:00",
+    "done": "false"
+  },
+  {
+    "id": "1750937928240",
+    "name": "hiking",
+    "freq": "monthly",
+    "date": "21.06.2025",
+    "done": "false"
+  },
+  {
+    "id": "1750940183606",
+    "name": "read_book",
+    "freq": "weekly",
+    "date": "16.06.2025_07:00",
+    "done": "false"
+  }
+]
