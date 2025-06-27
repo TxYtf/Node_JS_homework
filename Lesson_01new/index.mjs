@@ -2,11 +2,12 @@
 
 //import dotenv from 'dotenv';
 //dotenv.config(); //dotenv.config({ path: '../config/.env' }); //якщо .env знаходиться не в корені проекту
+// ці варіанти підключення .env я зберіг для себе на майбутнє, але по хорошому це все треба видалити
 
 import 'dotenv/config';
 import { handle as habitCtrl } from './controllers/habits.controller.mjs';
 
-//console.log(process.env.PORT);
+//console.log(process.env.PORT); // <-- приклад використання .env але не знаю як його використати у цьому завданні
 
 const args = process.argv.slice(2);
 const options = {};
