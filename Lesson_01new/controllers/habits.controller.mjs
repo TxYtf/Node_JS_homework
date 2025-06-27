@@ -5,34 +5,35 @@ import {
 export async function handle(command, options) {
   try {
     if (command === 'add') {
-      const body = options;
-      return json('add', 201, await addHabit(body));
+      const added = await addHabit(options);
+      return json('add', 201, added);
     };
 
     if (command === 'list') {
-      //const data = await listhabits();
-      console.table(await listhabits());
+      const habitsList = await listhabits();
+      console.table(habitsList);
       return json(command, 200);
     };
 
     if (command === 'update') {
-      const u = await updateHabit(options);
-      return u ? json(command, 200, u) : json('error', 404, { error: 'Not found' });
+      const updated = await updateHabit(options);
+      return updated ? json(command, 200, updated) : json('error', 404, { error: 'Not found' });
     };
 
     if (command === 'delete') {
-      const ok = await deleteHabit(options.id);
-      return ok ? json(command, 204) : json('error', 404, { error: 'Not found' });
+      const delOk = await deleteHabit(options.id);
+      return delOk ? json(command, 204) : json('error', 404, { error: 'Not found' });
     };
 
     if (command === 'done') {
-      const ok = await doneHabit(options.id);
-      return ok ? json(command, 200) : json('error', 404, { error: 'Not found' });
+      const doneOk = await doneHabit(options);
+      return doneOk ? json(command, 200) : json('error', 404, { error: 'Not found' });
     };
 
     if (command === 'stats') {
-      const u = await habitStats(options.id);
-      return u ? json(command, 200, u) : json('error', 404, { error: 'Not found' });
+      const statsList = await habitStats();
+      console.table(statsList);
+      return json(command, 200);
     };
 
     json('error', 405, { error: 'Command not allowed' });
@@ -42,7 +43,7 @@ export async function handle(command, options) {
 }
 
 /* ---------- helpers ---------- */
-function json(res, status, data = {}) {
-  if (data || data=={}) return {res, status, data};
+function json(command, status, data = {}) {
+  if (data || data=={}) return {command, status, data};
   else return {};
 };

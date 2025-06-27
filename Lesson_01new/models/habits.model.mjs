@@ -25,7 +25,15 @@ export async function create(payload) {
 
 export async function getAll() {
   const db = await read();
-  return [...db];
+  const renamed = db.map(h => ({
+    'ID звички': h.id,
+    'Назва звички': h.name,
+    'Частота': h.freq,
+    'Дата': h.date,
+    'Виконано': h.done
+  }));
+
+  return renamed;
 };
 
 export async function update(payload) {
@@ -46,3 +54,37 @@ export async function remove(id) {
   return true;
 };
 
+export async function doneById(payload) {
+  const now = new Date();
+  const pad = (n) => n.toString().padStart(2, '0');
+  const nowFormatted = `${pad(now.getDate())}.${pad(now.getMonth() + 1)}.${now.getFullYear()}_${pad(now.getHours())}:${pad(now.getMinutes())}`;  
+  
+  const date = payload.date ?? nowFormatted;
+  const idToFind = payload.id;
+
+  const db = await read();
+  const idx = db.findIndex((u) => u.id === idToFind);
+  if (idx === -1) return null;
+
+  const done = { id: db[idx].id, name: db[idx].name, freq: db[idx].freq, date: date, done: 'true' };
+  await create(done);
+  return done;
+};
+
+export async function stats() {
+  const db = await read();
+  const statsMap = db.reduce((acc, item) => {
+    if (!acc[item.id]) {
+      acc[item.id] = { id: item.id, total: 0, done: 0 };
+    }
+    acc[item.id].total += 1;
+    if (item.done === 'true') acc[item.id].done += 1;
+    return acc;
+  }, {});
+
+  const result = Object.values(statsMap).map(entry => ({
+    ...entry,
+    'percentage-done': Math.round((entry.done / entry.total) * 100)
+  }));
+  return result;
+};

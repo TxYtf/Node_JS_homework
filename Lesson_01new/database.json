@@ -33,5 +33,26 @@
     "freq": "weekly",
     "date": "16.06.2025_07:00",
     "done": "false"
+  },
+  {
+    "id": "1750940183606",
+    "name": "read_book",
+    "freq": "weekly",
+    "date": "27.06.2025_11:19",
+    "done": "true"
+  },
+  {
+    "id": "1750940183606",
+    "name": "read_book",
+    "freq": "weekly",
+    "date": "27.06.2025_11:27",
+    "done": "true"
+  },
+  {
+    "id": "1750940183606",
+    "name": "read_book",
+    "freq": "weekly",
+    "date": "01.01.2020_23:59",
+    "done": "true"
   }
 ]
