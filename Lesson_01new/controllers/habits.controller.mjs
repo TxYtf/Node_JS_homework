@@ -6,10 +6,10 @@ export const commandAdd = (options) => {
   return addHabit(options);
 };
 
-export const commandList = () => {
-  console.table(listhabits());
+export async function commandList() {
+  console.table(await listhabits());
   return {};
-};
+}
 
 export const commandUpdate = (options) => {
   return updateHabit(options);
@@ -23,9 +23,8 @@ export const commandDone = (options) => {
   return doneHabit(options);
 };
 
-export const commandStats = () => {
-  const statsList = habitStats();
-  console.table(statsList);
+export async function commandStats() {
+  console.table(await habitStats());
   return {};
 };
 

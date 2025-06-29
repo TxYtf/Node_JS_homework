@@ -25,7 +25,7 @@ export async function handle(command, options) {
             };
             break;
         case 'delete':
-            respDescript = commandDelete(options.id);
+            respDescript = await commandDelete(options.id);
             if (respDescript)
                 respCode = 204;
             else {
@@ -34,7 +34,7 @@ export async function handle(command, options) {
             };           
             break;
         case 'done':
-            respDescript = commandDone(options);
+            respDescript = await commandDone(options);
             if (respDescript)
                 respCode = 200;
             else {
@@ -43,16 +43,16 @@ export async function handle(command, options) {
             };
             break;
         case 'stats':
-            commandStats(options);
-            respDescript = {}
+            respDescript = await commandStats(options);
             respCode = 200;            
             break;            
         default:
-            json('error', 405, { error: 'Command not allowed' });
+            respDescript = {error: 'Command not allowed'};
+            respCode = 405;
     }
     return json(command, respCode, respDescript);
   } catch (e) {
-    json('error', 500, { error: e.message });
+    return json('error', 500, { error: e.message });
   };
 }
 

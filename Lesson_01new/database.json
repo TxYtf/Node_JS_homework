@@ -3,56 +3,70 @@
     "id": "1750936830268",
     "name": "run",
     "freq": "daily",
-    "date": "22.06.2025_07:30",
+    "date": 1750566660000,
     "done": "true"
   },
   {
     "id": "1750937115868",
     "name": "drink_water",
     "freq": "daily",
-    "date": "22.06.2025_08:00",
+    "date": 1750568400000,
     "done": "true"
   },
   {
     "id": "1750937837152",
     "name": "watch_YouTube",
     "freq": "daily",
-    "date": "23.06.2025_19:00",
+    "date": 1750694400000,
     "done": "false"
   },
   {
     "id": "1750937928240",
     "name": "hiking",
     "freq": "monthly",
-    "date": "21.06.2025",
+    "date": 1750474800000,
     "done": "false"
   },
   {
     "id": "1750940183606",
     "name": "read_book",
     "freq": "weekly",
-    "date": "16.06.2025_07:00",
+    "date": 1750046400000,
+    "done": "false"
+  },
+  {
+    "id": "1750937928240",
+    "name": "hiking",
+    "freq": "monthly",
+    "date": 1750489226000,
+    "done": "false"
+  },
+  {
+    "name": "hiking",
+    "freq": "monthly",
+    "date": 1750489226000,
+    "done": "false",
+    "id": "1750937928240"
+  },
+  {
+    "name": "reading_book",
+    "freq": "monthly",
+    "done": "false",
+    "id": "1751198339614",
+    "date": 1751198339614
+  },
+  {
+    "id": "1751198339614",
+    "name": "reading_book",
+    "freq": "monthly",
+    "date": 1751198527799,
     "done": "false"
   },
   {
     "id": "1750940183606",
     "name": "read_book",
     "freq": "weekly",
-    "date": "27.06.2025_11:19",
-    "done": "true"
-  },
-  {
-    "id": "1750940183606",
-    "name": "read_book",
-    "freq": "weekly",
-    "date": "27.06.2025_11:27",
-    "done": "true"
-  },
-  {
-    "id": "1750940183606",
-    "name": "read_book",
-    "freq": "weekly",
-    "date": "01.01.2020_23:59",
+    "date": 1577915940000,
     "done": "true"
   }
 ]
