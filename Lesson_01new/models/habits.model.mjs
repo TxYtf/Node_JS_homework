@@ -115,7 +115,6 @@ export async function stats() {
   const monthCounts = countById(monthStats);
   const weekCounts = countById(weekStats);
 
-  // Збираємо всі унікальні id
   const allIds = Array.from(new Set([
     ...Object.keys(monthCounts),
     ...Object.keys(weekCounts)
