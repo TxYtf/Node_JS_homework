@@ -5,7 +5,7 @@
 // ці варіанти підключення .env я зберіг для себе на майбутнє, але по хорошому це все треба видалити
 
 import 'dotenv/config';
-import { handle as habitCtrl } from './controllers/habits.controller.mjs';
+import { handle as habitCtrl } from './router/command.router.mjs';
 
 //console.log(process.env.PORT); // <-- приклад використання .env але не знаю як його використати у цьому завданні
 
